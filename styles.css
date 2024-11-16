@@ -1,0 +1,16 @@
+*{
+    background-color: pink;
+    font-family: fantasy;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+div{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
