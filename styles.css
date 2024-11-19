@@ -1,16 +1,158 @@
-*{
-    background-color: pink;
-    font-family: fantasy;
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Charm:wght@400;700&family=Cookie&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0 5px;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--colorCinco);
 }
 
-button{
-    height: 50px;
-    width: 100px;
-    border-radius: 5px;
+body {
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorUno);
 }
 
-div{
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vh;
+}
+
+.primerTexto{
+    font-family: "Bowlby One", sans-serif;
+}
+
+.invitacion{
+    /*display: none;*/
+    flex-direction: column;
+}
+
+.agradecimientos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    text-align: justify;
+    
+}
+
+.xv{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.graduacion{
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+.agradecimientos hr{
+    border-left: solid var(--colorTres);
+    height: 200px;
     position: absolute;
-    top: 50%;
-    transform: translate(50%, -50%);
+    width: 0;
+}
+
+.padres{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.padres h2{
+    font-size: 40px;
+    font-family: var(--fuenteUno)
+}
+
+.padres h4{
+    font-size: 32px;
+    font-family: var(--fuenteTres);
+}
+
+.padres p{
+    font-size: 30px;
+    font-family: var(--fuenteTres)
+}
+
+.titulo{
+    margin-top: -90px;
+}
+
+.titulo h2{
+    font-size: 38px;
+    margin-left: -190px;
+    font-family: var(--fuenteCuatro);
+}
+
+.titulo h1{
+    font-size: 38px;
+    font-family: var(--fuenteUno)
+}
+
+.titulo h3{
+    font-size: 38px;
+    margin-left: -150px;
+    font-family: var(--fuenteCuatro);
+}
+
+.titulo p{
+    font-family: var(--fuenteTres);
+    font-size: 22px;
+}
+
+.detalles{
+    margin-top: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detalles h2{
+    font-size: 28px;
+    font-family: var(--fuenteCuatro);
+}
+
+.detalles h1{
+    font-family: var(--fuenteTres);
+    font-size: 32px;
+}
+
+.detalles h3{
+    font-family: var(--fuenteUno);
+    font-size: 36px;
+}
+
+button {
+    background-color: var(--colorDos);
+    font-family: var(--fuenteTres);
+    color: var(--colorSeis);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+:root{
+    --fuenteUno: "Allura", cursive;
+    --fuenteDos: "Marck Script", cursive;
+    --fuenteTres: "Montserrat", sans-serif;
+    --fuenteCuatro: "Charm", cursive;
+    --fuenteCinco: "Cookie", cursive;
+    --colorUno: #f564a9;
+    --colorDos: #533b4d;
+    --colorTres: #c1aba6;
+    --colorCuatro: #faa4bd;
+    --colorCinco: #fae3c6;
+    --colorSeis: #fff;
 }

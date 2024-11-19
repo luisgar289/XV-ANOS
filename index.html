@@ -1,18 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <title>Mis XV Años/ Mi Graduacion</title>
 </head>
+
 <body>
-    <div>
-    MIS XV AÑOS<br>
-    DANIELA GARCIA GARCIA<br>
-    MI GRADUACION<br>
-    LUIS FERNANDO GARCIA GARCIA<br>
-    <button>Ver invitación</button>
+    <div class="contenedor">
+        <div class="primerTexto" id="primerTexto" style="display: none;">
+            <p>MIS XV AÑOS</p>
+            <br>
+            <p>DANIELA GARCÍA GARCÍA</p>
+            <br><br>
+            <p>MI GRADUACIÓN</p>
+            <br>
+            <p>LUIS FERNANDO GARCÍA GARCÍA</p>
+            <button onclick="verInvitacion()">Ver invitación</button>
+        </div>
+        <div class="invitacion" id="invitacion">
+            <div class="agradecimientos">
+                <div class="xv">
+                    Hace 15 años abrí los ojos y vi un mundo lleno de magia, pero me encontré sin amigos, sin sueños,
+                    sin nada. Hoy tengo el honor de contar con amigos y familia, personas tan bellas, que llenan mis
+                    días de luz.
+                </div>
+                <hr>
+                <div class="graduacion">
+                    Habrá momentos en los que lo mejor de ti no sea suficiente. Puede haber muchas razones para ello,
+                    pero mientras des lo mejor de ti estarás bien.
+                </div>
+            </div>
+            <div class="padres aos-init aos-animate" data-aos="fade-up">
+                <h2>Nuestros padres:</h2>
+                <br>
+                <h4>Fernando Garcia Evaristo</h4>
+                <h4>Antonieta Garcia Escorcia</h4>
+                <br>
+                <p>Tienen el gusto de invitarlos a festejar: </p>
+            </div>
+            <div class="titulo aos-init aos-animate" data-aos="fade-up">
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h2>Mis XV Años</h2>
+                    <h1 style="margin-left: -30%;">Daniela</h1>
+                    <h1 style="margin-left: 20%;">Garcia</h1>
+                    <h1 style="margin-left: 60%;">Garcia</h1>
+                    <br>
+                    <p>Junto a mis madrina</p>
+                    <p>Beta</p>
+                </div>
+                <br>
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h3>Mi Graduación</h3>
+                    <h1>Luis Fernando</h1>
+                    <h1 style="margin-left: 40%;">Garcia Garcia</h1>
+                </div>
+
+            </div>
+            <br>
+            <div class="detalles">
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h2>El evento tendrá lugar el:</h2>
+                    <h1>21 Diciembre 2024</h1>
+                </div>
+                <div class="aos-init aos-animate" data-aos="fade-up">Decoracion</div>
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h2>Faltan:</h2>
+                    <p>Contador</p>
+                </div>
+                <div class="misa aos-init aos-animate" data-aos="fade-up">
+                    <h1>13:00 horas</h1>
+                    <h3>Iglesia "Señor de los milagros"</h3>
+                    <button>Ubicación</button>
+                </div>
+                <div class="recepcion aos-init aos-animate" data-aos="fade-up">
+                    <h1>15:00 horas</h1>
+                    <h3>Salon "San Judas Tadeo"</h3>
+                    <button>Ubicación</button>
+                </div>
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h3>Esperamos contar con tu presencia!</h3>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
