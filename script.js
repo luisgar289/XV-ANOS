@@ -5,3 +5,4 @@ function verInvitacion() {
     abrirInvitacion.style.display = 'none';
     invitacion.style.display = 'flex';
 }
+

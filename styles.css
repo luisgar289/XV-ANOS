@@ -4,7 +4,7 @@
     margin: 0 5px;
     padding: 0;
     box-sizing: border-box;
-    color: var(--colorCinco);
+    /*color: #4b1f34;*/
 }
 
 body {
@@ -13,7 +13,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--colorUno);
+    background-color: #f93f4a;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url(./assets/fondo.gif);
 }
 
 .contenedor {
@@ -84,6 +85,7 @@ body {
 
 .titulo{
     margin-top: -90px;
+    color: #eaeaea;
 }
 
 .titulo h2{
@@ -93,8 +95,10 @@ body {
 }
 
 .titulo h1{
-    font-size: 38px;
-    font-family: var(--fuenteUno)
+    font-size:56px;
+    font-family: var(--fuenteUno);
+    color:#095632;
+    font-weight: bold;
 }
 
 .titulo h3{
@@ -113,6 +117,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -130,6 +135,49 @@ body {
     font-family: var(--fuenteUno);
     font-size: 36px;
 }
+
+/* General container styling */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: var(--colorCuatro);
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 340px;
+}
+
+/* Styling for each unit (days, hours, minutes, seconds) */
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    min-width: 40px;
+}
+
+/* Unit value */
+.countdown-item span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Unit label */
+.countdown-item small {
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: #666;
+}
+
 
 button {
     background-color: var(--colorDos);
