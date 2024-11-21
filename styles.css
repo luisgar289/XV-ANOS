@@ -35,37 +35,47 @@ body {
 }
 
 .agradecimientos{
+    margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50vh;
+    height: 40vh;
     text-align: justify;
-    
+    font-family: var(--fuenteTres);
 }
 
 .xv{
     flex: 1;
-    margin-right: 20px;
+    width: 350px;
+    z-index: 10;
 }
 
 .graduacion{
     flex: 1;
-    margin-left: 20px;
+    width: 350px;
 }
 
-
-.agradecimientos hr{
-    border-left: solid var(--colorTres);
-    height: 200px;
+.mariposas-container {
     position: absolute;
-    width: 0;
+    top: 0; /* Ajusta según lo necesario */
+    left: 50%;
+    transform: translate(-160%, 20%); /* Centra horizontalmente */
+    z-index: 0; /* Asegura que esté encima del texto */
+}
+
+.mariposas{
+    width: 170px;
+    opacity: 25%;
 }
 
 .padres{
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    color: #4b1f34;
+    height: 35vh;
 }
 
 .padres h2{
@@ -84,26 +94,39 @@ body {
 }
 
 .titulo{
-    margin-top: -90px;
-    color: #eaeaea;
+    margin-top: 3rem;
+    color: #42192d;
+}
+
+.mariposa-container {
+    position: absolute;
+    top: 0; /* Ajusta según lo necesario */
+    left: 50%;
+    transform: translate(5%, 14%); /* Centra horizontalmente */
+    z-index: 10; /* Asegura que esté encima del texto */
+}
+
+.mariposa {
+    width: 120px; /* Ajusta el tamaño de la mariposa */
+    height: auto;
+    opacity: 90%;
 }
 
 .titulo h2{
-    font-size: 38px;
-    margin-left: -190px;
+    font-size: 46px;
+    margin-left: -140px;
     font-family: var(--fuenteCuatro);
 }
 
 .titulo h1{
-    font-size:56px;
+    font-size:58px;
     font-family: var(--fuenteUno);
-    color:#095632;
-    font-weight: bold;
+    
 }
 
 .titulo h3{
-    font-size: 38px;
-    margin-left: -150px;
+    font-size: 46px;
+    margin-left: -120px;
     font-family: var(--fuenteCuatro);
 }
 
@@ -114,26 +137,42 @@ body {
 
 .detalles{
     margin-top: 30px;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
+.mariposasfinal-container {
+    position: absolute;
+    left: -10%;
+    top: 100%; /* Ajusta según lo necesario */
+    z-index: 0; /* Asegura que esté encima del texto */
+}
+
+.mariposasfinal {
+    opacity: 30%;
+    width: 400px; /* Ajusta el tamaño de la mariposa */
+    height: auto;
+}
+
 .detalles h2{
     font-size: 28px;
     font-family: var(--fuenteCuatro);
+    z-index: 1;
 }
 
 .detalles h1{
     font-family: var(--fuenteTres);
     font-size: 32px;
+    z-index: 1;
 }
 
 .detalles h3{
     font-family: var(--fuenteUno);
     font-size: 36px;
+    z-index: 1;
 }
 
 /* General container styling */
@@ -142,15 +181,16 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--fuenteCinco);
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #4b1f34;
     background: var(--colorCuatro);
     padding: 0px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 340px;
+    width: 360px;
+    z-index: 1;
 }
 
 /* Styling for each unit (days, hours, minutes, seconds) */
@@ -161,12 +201,15 @@ body {
     text-align: center;
     padding: 10px;
     min-width: 40px;
+    z-index: 1;
 }
 
 /* Unit value */
 .countdown-item span {
-    font-size: 1.5rem;
+    font-family: var(--fuenteCuatro);
+    font-size: 1.8rem;
     font-weight: bold;
+    z-index: 1;
 }
 
 /* Unit label */
@@ -175,12 +218,14 @@ body {
     font-weight: normal;
     text-transform: uppercase;
     margin-top: 5px;
-    color: #666;
+    color: #fff;
+    z-index: 1;
+    font-family: var(--fuenteTres);
 }
 
 
 button {
-    background-color: var(--colorDos);
+    background-color: #4b1f34;
     font-family: var(--fuenteTres);
     color: var(--colorSeis);
     border: none;
@@ -189,6 +234,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    z-index: 10;
 }
 
 :root{
