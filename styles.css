@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Charm:wght@400;700&family=Cookie&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0 5px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*color: #4b1f34;*/
 }
 
 body {
@@ -14,7 +13,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f93f4a;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url(./assets/fondo.gif);
+}
+
+.agradecimientos, .padres, .titulo, .detalles{
+    z-index: 10;
 }
 
 .contenedor {
@@ -22,39 +24,76 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100vh;
 }
 
 .primerTexto{
-    font-family: "Bowlby One", sans-serif;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%; /* Posición en el centro vertical */
+    left: 50%; /* Posición en el centro horizontal */
+    transform: translate(-50%, -50%); /* Ajuste perfecto al centro */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("./assets/mariposas.gif") no-repeat center center fixed ;
+    background-size: cover;
+
+}
+
+.primerTexto h1 {
+    font-size: 200%;
+    font-family: var(--fuenteTres);
+    color: #42192d;
+}
+
+.primerTexto p {
+    font-size: 230%;
+    font-family: var(--fuenteCuatro);
+    margin: 10px 0;
+}
+
+.primerTexto button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #533b4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .invitacion{
-    /*display: none;*/
+    display: none;
     flex-direction: column;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url(./assets/fondo.gif);
 }
 
 .agradecimientos{
-    margin-top: 20px;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 40vh;
     text-align: justify;
     font-family: var(--fuenteTres);
 }
 
 .xv{
     flex: 1;
-    width: 350px;
+    width: 80%;
     z-index: 10;
 }
 
 .graduacion{
     flex: 1;
-    width: 350px;
+    width: 80%;
 }
 
 .mariposas-container {
@@ -74,27 +113,30 @@ body {
     margin-top: 10%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #4b1f34;
-    height: 35vh;
 }
 
 .padres h2{
+    width: 90%;
     font-size: 40px;
     font-family: var(--fuenteUno)
 }
 
 .padres h4{
+    width: 90%;
     font-size: 32px;
     font-family: var(--fuenteTres);
 }
 
 .padres p{
+    width: 90%;
     font-size: 30px;
     font-family: var(--fuenteTres)
 }
 
 .titulo{
-    margin-top: 3rem;
     color: #42192d;
 }
 
@@ -112,9 +154,18 @@ body {
     opacity: 90%;
 }
 
+#dani{
+    margin-top: 20%;
+}
+
+#luis{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
 .titulo h2{
     font-size: 46px;
-    margin-left: -140px;
+    margin-left: -20%;
     font-family: var(--fuenteCuatro);
 }
 
@@ -126,7 +177,7 @@ body {
 
 .titulo h3{
     font-size: 46px;
-    margin-left: -120px;
+    margin-left: -15%;
     font-family: var(--fuenteCuatro);
 }
 
@@ -135,13 +186,17 @@ body {
     font-size: 22px;
 }
 
-.detalles{
-    margin-top: 30px;
-    height: 120vh;
+.detalles {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra en el eje vertical */
+    align-items: center; /* Centra en el eje horizontal */
+    text-align: center; /* Alinea texto centrado dentro de los elementos */
+}
+
+
+#decoracion{
+    width: 95%;
 }
 
 .mariposasfinal-container {
@@ -153,7 +208,7 @@ body {
 
 .mariposasfinal {
     opacity: 30%;
-    width: 400px; /* Ajusta el tamaño de la mariposa */
+    width: 100%; /* Ajusta el tamaño de la mariposa */
     height: auto;
 }
 
@@ -161,18 +216,21 @@ body {
     font-size: 28px;
     font-family: var(--fuenteCuatro);
     z-index: 1;
+    margin-bottom: 10%;
 }
 
 .detalles h1{
     font-family: var(--fuenteTres);
     font-size: 32px;
     z-index: 1;
+    margin-bottom: 10%;
 }
 
 .detalles h3{
     font-family: var(--fuenteUno);
     font-size: 36px;
     z-index: 1;
+    margin-bottom: 10%;
 }
 
 /* General container styling */
@@ -180,7 +238,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     font-family: var(--fuenteCinco);
     font-size: 1.5rem;
     font-weight: bold;
@@ -189,8 +246,10 @@ body {
     padding: 0px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 360px;
+    max-width: 330px;
+    min-width: 300px;
     z-index: 1;
+    margin-bottom: 10%;
 }
 
 /* Styling for each unit (days, hours, minutes, seconds) */
@@ -235,6 +294,7 @@ button {
     cursor: pointer;
     margin-top: 20px;
     z-index: 10;
+    margin-bottom: 10%;
 }
 
 :root{
@@ -249,4 +309,13 @@ button {
     --colorCuatro: #faa4bd;
     --colorCinco: #fae3c6;
     --colorSeis: #fff;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.flash-animation {
+    animation: flash 0.5s ease-in-out;
 }
